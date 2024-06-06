@@ -1,0 +1,96 @@
+.main_page {
+  margin-top: 90px;
+  padding: 0px;
+  background-color: #f5f5f5; /* Light grey background for a clean look */
+  text-align: center;
+}
+
+.carousel img {
+  max-height: 650px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay for better text visibility */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel-caption h5 {
+  color: #ffffff; /* White text for better contrast */
+}
+
+.carousel-caption p {
+  color: #cccccc; /* Light grey text for a softer look */
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #007bff; /* Professional blue color for the hero text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 1; /* Ensure it is above the carousel items */
+  animation: slideInFromLeft 2s ease-in-out forwards;
+}
+
+.carousel {
+  position: relative;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Style for the individual components (Notices and LatestUpdates) */
+.notice,
+.latestupdate {
+  flex: 1;
+  min-width: 45%;
+  margin-bottom: 20px;
+  background-color: #ffffff; /* White background for a clean look */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  margin: 10px 30px;
+}
+
+/* Add gradient background */
+.notice {
+  background: linear-gradient(to right, #e3f2fd 0%, #bbdefb 100%); /* Light blue gradient */
+}
+
+.latestupdate {
+  background: linear-gradient(to right, #e3f2fd 0%, #bbdefb 100%); /* Light blue gradient */
+}
+
+/* Style for the government icon */
+.gov_icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff; /* Professional blue color */
+  color: #ffffff; /* White color for the icon */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  margin: 0 auto 20px; /* Add margin bottom */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}

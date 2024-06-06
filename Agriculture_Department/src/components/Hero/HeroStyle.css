@@ -1,0 +1,51 @@
+.hero_info {
+    text-align: center;
+    max-width: 100%; 
+    overflow-wrap: break-word; 
+    
+  }
+  
+  .hero_info h1 {
+    font-size: 2rem;
+  }
+  
+  .hero_info p {
+    font-size: 1.5rem;
+  }
+  
+  .btn_welcome {
+    background-color: rgb(1, 255, 60);
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 2px;
+  }
+  
+  .btn_welcome:hover {
+    background-color: rgb(55, 207, 77);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero_info h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero_info p {
+      font-size: 1rem;
+    }
+  
+    .btn_welcome {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  
+    .hero_info {
+        display: none;
+      padding: 10px; 
+    }
+  }
+  @media screen and (max-width:350px ) {
+    .hero_info{
+        display: none;
+    }
+  }
+  

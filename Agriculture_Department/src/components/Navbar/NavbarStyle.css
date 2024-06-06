@@ -1,0 +1,90 @@
+
+.NavbarItems {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+  height: 90px;
+  z-index: 9999;
+  background-color: rgb(76, 204, 104);
+  /* border-radius: 0 0 23px 23px; */
+  margin: 0; 
+}
+
+.app__navbar_logo img {
+  height: 40px; 
+}
+
+.nav_menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav_menu li {
+  float: left;
+}
+
+.nav_menu li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav_menu li a:hover {
+  color: rgb(3, 194, 3);
+  transition: all 0.2s ease-in-out;
+}
+
+.nav_menu li a i {
+  margin-right: 8px;
+}
+
+.menu-icons {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 870px) {
+  .nav_menu {
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(176, 255, 207);
+    width: 100%;
+    height: 500px; 
+    position: absolute;
+    top: 60px;
+    left: -100%; 
+    margin: 0;
+    opacity: 0;
+    padding: 100px 0 30px 0;
+    align-items: center;
+    font-size: 20px;
+    transition: 0.3s ease;
+    margin-top: 25px;
+  }
+
+  .nav_menu.active {
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+
+  }
+
+  .menu-icons {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-icons i {
+    font-size: 30px;
+  }
+}

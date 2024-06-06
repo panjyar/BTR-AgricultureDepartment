@@ -1,0 +1,27 @@
+.latest-updates {
+  flex: 1;
+  margin: 20px;
+}
+
+.latest-updates h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.latest-updates ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.latest-updates li {
+  margin-bottom: 10px;
+}
+
+.latest-updates a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.latest-updates a:hover {
+  text-decoration: underline;
+}

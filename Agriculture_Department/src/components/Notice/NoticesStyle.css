@@ -1,0 +1,58 @@
+/* Base styles */
+.notices {
+  flex: 1;
+  margin: 20px;
+  font-weight: 500;
+  font-size: large;
+}
+
+.notices h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.notices ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notices li {
+  margin-bottom: 10px;
+}
+
+.notices a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.notices a:hover {
+  transition: all 0.2s ease-out;
+  color: rgb(57, 66, 131);
+}
+
+.notice_heading h2 {
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+.new_gif {
+  height: 30px;
+  width: 30px;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 600px) {
+  .notices {
+    margin: 10px;
+    font-size: medium;
+  }
+
+  .notices h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .notices li {
+    margin-bottom: 8px;
+  }
+}
